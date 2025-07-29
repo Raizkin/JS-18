@@ -3,18 +3,18 @@
 // Напиши скрипт, який виконає наступні операції.
 // Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item. Вийде 'У списку 3 категорії.'.
 
-// const findEl = document.querySelectorAll(".item");
-// console.log(`У списку ${findEl.length} категорії.`);
+const findEl = document.querySelectorAll(".item");
+console.log(`У списку ${findEl.length} категорії.`);
 
-// Для кожного елемента li.item в списку ul#categories, знайде і виведе в консоль текст заголовка елемента (тега h2) і кількість елементів в категорії (всіх вкладених в нього елементів li).
+Для кожного елемента li.item в списку ul#categories, знайде і виведе в консоль текст заголовка елемента (тега h2) і кількість елементів в категорії (всіх вкладених в нього елементів li).
 
-// findEl.forEach((item) => {
-//   const textEl = item.querySelector("h2").textContent;
-//   const elementsCount = item.querySelectorAll("li").length;
+findEl.forEach((item) => {
+  const textEl = item.querySelector("h2").textContent;
+  const elementsCount = item.querySelectorAll("li").length;
 
-//   console.log(`Категорія: ${textEl}`);
-//   console.log(`Кількість елементів: ${elementsCount}`);
-// });
+  console.log(`Категорія: ${textEl}`);
+  console.log(`Кількість елементів: ${elementsCount}`);
+});
 
 // Наприклад, для першої категорії вийде:
 // Категорія: Тварини
