@@ -6,7 +6,7 @@
 const findEl = document.querySelectorAll(".item");
 console.log(`У списку ${findEl.length} категорії.`);
 
-Для кожного елемента li.item в списку ul#categories, знайде і виведе в консоль текст заголовка елемента (тега h2) і кількість елементів в категорії (всіх вкладених в нього елементів li).
+// Для кожного елемента li.item в списку ul#categories, знайде і виведе в консоль текст заголовка елемента (тега h2) і кількість елементів в категорії (всіх вкладених в нього елементів li).
 
 findEl.forEach((item) => {
   const textEl = item.querySelector("h2").textContent;
@@ -56,7 +56,7 @@ ingredientsEl.append(...listEl);
 // Створи змінну counterValue в якій буде зберігається поточне значення лічильника.
 // Створи функції increment і decrement для збільшення і зменшення значення лічильника.
 // Додай слухачі кліків на кнопки, виклики функцій та оновлення інтерфейсу
->
+
   let currentCount = 0;
   const displayEl = document.getElementById('display');
 
